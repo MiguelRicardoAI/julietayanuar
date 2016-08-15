@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"> 
+  <!--Import Google Icon Font-->
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+  <style type="text/css">
+    .icon-content{
+      font-size: 5em;
+    }
+    .parallax-container {
+      height: 800px;
+    }
+    .nav-wrapper{
+      margin-top: 20px;
+    }
+    .custom-container{
+      width: 100%;
+      height: 400px;
+      font-family: 'Lato', sans-serif;
+    }
+    .caption{
+      margin-top: 20%;
+      font-family: 'Lato', sans-serif;
+
+    }
+    .brand-logo{
+      margin-left: 7%;
+      font-family: 'Lato', sans-serif;
+    }
+  </style>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+
+  <!--begin_nav-->
+  <div class="parallax-container">
+  <nav>
+    <div class="nav-wrapper grey lighten-5">
+      <!--logo-->
+      <a href="index2.html" class="brand-logo left black-text">JULIETA & ANUAR</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <!--right-->
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html" class="black-text"><i class="small material-icons left">home</i>HOME</a></li>
+        <li><a href="history.html" class="black-text"><i class="small material-icons left">favorite</i>OUR STORY</a></li>
+        <li><a href="wedding.html" class="black-text"><i class="small material-icons left">event</i>THE WEDDING</a></li>
+        <li><a href="oaxaca.html" class="black-text"><i class="small material-icons left">explore</i>OAXACA</a></li>
+        <li><a href="travel.html" class="black-text"><i class="small material-icons left">flight_land</i>TRAVEL</a></li>
+        <li><a href="gallery.html" class="black-text"><i class="small material-icons left">card_giftcard</i>GIFTS</a></li>
+        <li><a href="rsvp.html" class="black-text"><i class="small material-icons left">note</i>RSVP</a></li>
+      </ul>
+      <!--begin_mobile-->
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="history.html">OUR STORY</a></li>
+        <li><a href="wedding.html">THE WEEDING</a></li>
+        <li><a href="oaxaca.html">OAXACA</a></li>
+        <li><a href="travel.html">TRAVEL</a></li>
+        <li><a href="gifts.html">GIFTS</a></li>
+        <li><a href="rsvp.html">RSVP</a></li>
+      </ul>
+      <!--end_mobile-->
+    </div>
+  </nav>
+  <!--end_nav-->
+
+      <div class="parallax" class="responsive-img"><img src="img/image00.jpg"></div>
+      <div class="caption center">
+          <h3 class="white-text">NOS ENCONTRAMOS</h3>
+        </div>
+    </div>
+
+
+  <!--Begin_div-->
+  <div>
+  
+  <!---->
+  <div class="custom-container">
+    
+  </div>
+
+  <div class="parallax-container">
+      <div class="parallax"><img src="img/image1.jpg"></div>
+      <div class="caption center">
+          <h3 class="white-text">EL LO PIDIÓ</h3>
+        </div>
+    </div>
+
+  <!---->
+  <div class="custom-container">
+    
+  </div>
+
+  <div class="parallax-container">
+      <div class="parallax"><img src="img/image2.jpg"></div>
+      <div class="caption center">
+          <h3 class="white-text">ELLA DIJO SI</h3>
+        </div>
+    </div>
+    <!---->
+  <div class="custom-container">
+    
+  </div>
+
+  <div class="parallax-container">
+      <div class="parallax"><img src="img/image3.jpg"></div>
+      <div class="caption center">
+          <h3 class="white-text">Y AHORA ESTAMOS AQUÍ</h3>
+        </div>
+    </div>
+
+  <!--footer-->
+          <footer class="page-footer">
+          <div class="footer-copyright">
+            <div class="container">
+            © 2017 Copyright
+            <a class="grey-text text-lighten-4 right" href="#!">Miguel Altamirano</a>
+            </div>
+          </div>
+        </footer>
+
+  <div class="fixed-action-btn" style="bottom: 5px; left: 50%;">
+    <a class="btn-floating btn-large black">
+      <i class="large material-icons">arrow_upward</i>
+    </a>
+  </div>
+
+  <iframe scrolling="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/125851434&amp;auto_play=true&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=false" ;class="hidden" frameborder="no" height="0" width="0"></iframe>
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>
+    $( document ).ready(function(){
+      $(".button-collapse").sideNav();
+      $('.modal-trigger').leanModal();
+      $('.slider').slider({full_width: true, height:800});
+      $('.parallax').parallax();
+
+      $('.fixed-action-btn').click(function(){
+        $('body, html').animate({
+          scrollTop: '0px'
+        }, 300);
+      });
+      $(window).scroll(function(){
+        if( $(this).scrollTop() > 0 ){
+          $('.fixed-action-btn').slideDown(300);
+        } else {
+          $('.fixed-action-btn').slideUp(300);
+        }
+      });
+    })
+  </script>
+</body>
+</html>
+
+
