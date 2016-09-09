@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8"> 
+  	<title>Julieta & Anuar</title>
+	<meta charset="utf-8">
+	<meta name=viewport content="width=device-width, initial-scale=1">
 	<!--Import Google Icon Font-->
-	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+  	<link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet"> 
+  	<!--Import Google Font-->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
 	<!--Import materialize.css-->
-	<link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+	<link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="css/animate.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="css/materialize.css" type="text/css" rel="stylesheet" />
 	<style type="text/css">
 		.icon-content{
 			font-size: 5em;
@@ -21,21 +25,44 @@
 		.custom-container{
 			width: 100%;
 			height: 400px;
-			font-family: 'Lato', sans-serif;
 		}
 		.caption{
 			margin-top: 20%;
 			font-family: 'Lato', sans-serif;
-
+      		font-weight: 400;
 		}
 		.brand-logo{
 			margin-left: 7%;
 			font-family: 'Lato', sans-serif;
+      		font-weight: 400;
 		}
 		.justy{
-			font-family: 'Lato', sans-serif;
 			text-align: justify;
 		}
+		a{
+			color: #3f51b5;
+		}
+		.userView{
+			height: 200px;
+		}
+		.mitad{
+			width: 50%;
+		}
+		.tercio{
+			width: 140px;
+		}
+		body{
+			font-family: 'Lato', sans-serif;
+      		font-weight: 300;
+	    }
+	    h3,h5{
+      		font-weight: 300;
+	    }
+	    .hid{
+	      background-color:rgba(52, 74, 81, 0.42); 
+	      width:100%; 
+	      height:100%;
+	    }
 	</style>
 	<!--Let browser know website is optimized for mobile-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -43,157 +70,188 @@
 
 <body>
 
+<div class="none">
+
+	<div class="hid">
 	<!--parallax_begin-->
 	<div class="parallax-container">
-		<!--begin_nav-->
-		<div class="parallax-container">
-			<nav>
-				<div class="nav-wrapper grey lighten-5">
-					<!--logo-->
-					<a href="index2.html" class="brand-logo left black-text">JULIETA & ANUAR</a>
-					<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-					<!--right-->
-					<ul class="right hide-on-med-and-down">
-						<li><a href="index.html" class="black-text"><i class="small material-icons left">home</i>HOME</a></li>
-						<li><a href="history.html" class="black-text"><i class="small material-icons left">favorite</i>OUR STORY</a></li>
-						<li><a href="wedding.html" class="black-text"><i class="small material-icons left">event</i>THE WEDDING</a></li>
-						<li><a href="oaxaca.html" class="black-text"><i class="small material-icons left">explore</i>OAXACA</a></li>
-						<li><a href="travel.html" class="black-text"><i class="small material-icons left">flight_land</i>TRAVEL</a></li>
-						<li><a href="gallery.html" class="black-text"><i class="small material-icons left">card_giftcard</i>GIFTS</a></li>
-						<li><a href="rsvp.html" class="black-text"><i class="small material-icons left">note</i>RSVP</a></li>
-					</ul>
-					<!--begin_mobile-->
-					<ul class="side-nav" id="mobile-demo">
-						<li><a href="index.html">HOME</a></li>
-						<li><a href="history.html">OUR STORY</a></li>
-						<li><a href="wedding.html">THE WEEDING</a></li>
-						<li><a href="oaxaca.html">OAXACA</a></li>
-						<li><a href="travel.html">TRAVEL</a></li>
-						<li><a href="gifts.html">GIFTS</a></li>
-						<li><a href="rsvp.html">RSVP</a></li>
-					</ul>
-					<!--end_mobile-->
+	<nav>
+		<div class="nav-wrapper grey lighten-5">
+			<!--logo-->
+      		<a href="index.html" class="brand-logo left grey-text text-darken-1">JULIETA & ANUAR</a>
+      		<a href="#" data-activates="mobile-demo" class="button-collapse black-text"><i class="material-icons">menu</i></a>
+      		<!--right-->
+      		<ul class="right hide-on-med-and-down">
+        		<li>
+        			<a href="index.html" class="black-text text-darken-1"><i class="small material-icons left">home</i>INICIO</a>
+        		</li>
+        		<li>
+        			<a href="history.html" class="black-text text-darken-1"><i class="small material-icons left">favorite</i>HISTORIA</a>
+        		</li>
+        		<li>
+        			<a href="wedding.html" class="black-text text-darken-1"><i class="small material-icons left">event</i>BODA</a>
+        		</li>
+        		<li>
+        			<a href="#" class="red-text text-darken-2"><i class="small material-icons left animated rotateIn">explore</i>OAXACA</a>
+        		</li>
+        		<li>
+        			<a href="travel.html" class="black-text text-darken-1"><i class="small material-icons left">flight_land</i>VIAJE</a>
+        		</li>
+        		<li>
+        			<a href="#modal1" class="black-text text-darken-1 modal-trigger"><i class="small material-icons left">card_giftcard</i>REGALOS</a>
+        		</li>
+        		<li>
+        			<a href="rsvp.html" class="black-text text-darken-1"><i class="small material-icons left">note</i>RSVP</a>
+        		</li>
+      		</ul>
+	      <!--begin_mobile-->
+	      <ul id="mobile-demo" class="side-nav">
+    		<li>
+    			<div class="userView">
+      				<img alt="side" class="background" src="http://res.cloudinary.com/dfocrv7tg/image/upload/c_scale,w_300/v1471363636/home/principal2.jpg">
+    			</div>
+    		</li>
+    		<li><a href="index.html">Inicio</a></li>
+    		<li><a href="history.html">Historia</a></li>
+    		<li><a href="wedding.html">Boda</a></li>
+    		<li><a href="#" class="red-text text-darken-2">Oaxaca</a></li>
+    		<li><a href="travel.html">Viaje</a></li>
+    		<li><a href="#modal1" class="black-text modal-trigger">Regalos</a></li>
+    		<li><a href="rsvp.html">RSVP</a></li>
+      		<li><a href="mailto:julietayanuar@gmail.com" class="waves-effect waves-light btn center grey darken-2">julietayanuar@gmail.com</a></li>
+  		  </ul>
+	      <!--end_mobile-->
+		</div>
+	</nav>
+	
+
+	<!--end_nav-->
+		<div class="parallax">
+			<!--CAMBIAR-->
+			<img alt="oaxaca" src="http://res.cloudinary.com/dfocrv7tg/image/upload/v1471321959/oaxaca/oaxacanew.jpg" />
+			<div class="hid"></div>
+		</div>
+		<div class="caption center">
+			<h3 class="white-text">OAXACA</h3>
+		</div>
+		</div>
+	</div>
+	<!--parallax_end-->
+
+	<!--Begin_div-->
+	<div>
+		<!--container_begin-->
+		<div class="container">
+			<!--col-->
+			<div class="col s12 m8 offset-m2 l6 offset-l3">
+				<!--Panel1-->
+				<div class="card-panel grey lighten-5 z-depth-1">
+					<div class="row valign-wrapper">
+						<div class="col s4">
+							<img alt="cultural" src="http://res.cloudinary.com/dfocrv7tg/image/upload/v1471321959/oaxaca/cultural.jpg" class="responsive-img" /> <!-- notice the "circle" class -->
+						</div>
+						<div class="col s8 black-text justy">
+							<h5>CENTRO CULTURAL SANTO DOMINGO</h5>
+							<p>
+								Alberga al Museo de Arte Prehispánico y Etnográfico de Oaxaca y a la Biblioteca Francisco Burgoa. Ex-Convento de Santo Domingo. 
+							</p>
+							<p>
+								Calle Macedonio Alcalá, Centro Histórico.
+							</p>	
+							<p> 
+								Horario: Martes a domingo de 10:00 a 18:30 horas (cerrado los lunes)
+							</p>
+							<p>Tel. 01 (951) 516-2991</p>
+						</div>
+					</div>
 				</div>
-			</nav>
-			<!--end_nav-->
-
-			<div class="parallax" class="responsive-img">
-				<!--CAMBIAR-->
-				<img src="img/oaxaca/oax.jpg">
-			</div>
-			<div class="caption center">
-				<h3 class="white-text">OAXACA</h3>
-			</div>
-		</div>
-		</div>
-		<!--parallax_end-->
-
-
-		<!--Begin_div-->
-		<div>
-			<!--container_begin-->
-			<div class="container">
-				<!--col-->
-				<div class="col s12 m8 offset-m2 l6 offset-l3">
-					<!--Panel1-->
-					<div class="card-panel grey lighten-5 z-depth-1">
-						<div class="row valign-wrapper">
-							<div class="col s4">
-								<img src="img/andador.jpg" alt="" class="responsive-img"> <!-- notice the "circle" class -->
-							</div>
-							<div class="col s8">
-								<span class="black-text justy">
-									<h5>CENTRO CULTURAL SANTO DOMINGO</h5>
-									<p>
-										Alberga al Museo de Arte Prehispánico y Etnográfico de Oaxaca y a la Biblioteca Francisco Burgoa. Ex-Convento de Santo Domingo. Calle Macedonio Alcalá. 
-									</p>
-									<p> 
-										Horario: Martes a domingo de 10:00 a 18:30 horas (cerrado los lunes)
-									</p>
-									<p>Tel. (951) 516-2991</p>
-								</span>
-							</div>
+				<!--Panel2-->
+				<div class="card-panel grey lighten-5 z-depth-1">
+					<div class="row valign-wrapper">
+						<div class="col s4">
+							<img alt="mufi" src="http://res.cloudinary.com/dfocrv7tg/image/upload/v1471445190/oaxaca/mufi.jpg" class="responsive-img" /> <!-- notice the "circle" class -->
+						</div>
+						<div class="col s8 black-text justy">
+								<h5>MUSEO DE LA FILATELIA (MUFI)</h5>
+								<p>
+									Recinto museográfico dedicado a la filatelia y el coleccionismo.
+									Timbres, sobres, cancelaciones, hojillas, arte, cartas, escultura, literatura, todo esto en un espacio dedicado a ello.
+								</p>
+								<p>
+									Reforma 509, Centro Histórico.
+								</p>
+								<p>
+									Horario: 10:00 a 20:00 hrs. (Abierto toda la semana) 
+								</p>
+								<p>Tels. 01 (951) 514 2366 y 514 2375</p>
 						</div>
 					</div>
-					<!--Panel1-->
-					<!--Panel2-->
-					<div class="card-panel grey lighten-5 z-depth-1">
-						<div class="row valign-wrapper">
-							<div class="col s4">
-								<img src="img/tule.jpg" alt="" class="responsive-img"> <!-- notice the "circle" class -->
-							</div>
-							<div class="col s8">
-								<span class="black-text justy">
-									<h5>MUSEO DE LA FILATELIA (MUFI)</h5>
-									<p>
-										Reforma 509, Centro Histórico.
-									</p>
-									<p>
-										Horario: 10:00 a 20:00 hrs. (Abierto toda la semana) 
-									</p>
-									<p>Tels. (951) 514 2366 y 514 2375</p>
-								</span>
-							</div>
+				</div>
+				<!--Panel3-->
+				<div class="card-panel grey lighten-5 z-depth-1">
+					<div class="row valign-wrapper">
+						<div class="col s4">
+							<img alt="San pablo" src="http://res.cloudinary.com/dfocrv7tg/image/upload/v1471445190/oaxaca/spablo.jpg" class="responsive-img" /> 
+						</div>
+						<div class="col s8 black-text justy">
+								<h5>CENTRO ACADÉMICO Y CULTURAL SAN PABLO</h5>
+								<p>
+									El Centro cultural San Pablo articula proyectos académicos que tienen el fin de valorar la herencia pluricultural y abre espacios dignos para las expresiones culturales, ademas cuentan con una colección de libros, manuscritos y soportes digitales dedicados a la historia, culturas y lenguas de Oaxaca.
+								</p>
+								<p>
+									Miguel Hidalgo 907, Centro Histórico.
+								</p>
+								<p>
+									Telefono: 01 (951) 50 1 88 00
+ 								</p>
+								<p> 
+									Horario: De Lunes a sábado 10:oo hrs a 20:00 hrs y
+									Domingo 10:00 a 18:00 hrs.
+								</p>
 						</div>
 					</div>
-					<!--Panel2-->
-					<!--Panel3-->
-					<div class="card-panel grey lighten-5 z-depth-1">
-						<div class="row valign-wrapper">
-							<div class="col s4">
-								<img src="img/andador.jpg" alt="" class="responsive-img"> <!-- notice the "circle" class -->
-							</div>
-							<div class="col s8">
-								<span class="black-text justy">
-									<h5>San Pablo</h5>
-									<p>
-										texto 
-									</p>
-									<p> 
-										Horario
-									</p>
-								</span>
-							</div>
+				</div>
+				<!--Panel4-->
+				<div class="card-panel grey lighten-5 z-depth-1">
+					<div class="row valign-wrapper">
+						<div class="col s4">
+							<img alt="Jardin Etnobotánico" src="http://res.cloudinary.com/dfocrv7tg/image/upload/v1471321959/oaxaca/etnobotanico2.jpg"  class="responsive-img"> 
+						</div>
+						<div class="col s8 black-text justy">
+								<h5>JÁRDIN ETNOBOTÁNICO</h5>
+								<p>
+									Recorridos guiados en español para todo público tres veces al día. Ex-Convento de Santo Domingo. 
+								</p>
+								<p>
+									Reforma s/n esquina con Constitución, Centro Histórico.
+								</p>
+								<p>
+									Horario: De lunes a sábado 10:00, 12:00 y 17:00 horas,en inglés los martes, jueves y sábados a las 11:00 horas
+								</p>
 						</div>
 					</div>
-					<!--Panel3-->
-					<!--Panel4-->
-					<div class="card-panel grey lighten-5 z-depth-1">
-						<div class="row valign-wrapper">
-							<div class="col s4">
-								<img src="img/tule.jpg" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+				</div>
+				<!--Panel5-->
+				<div class="card-panel grey lighten-5 z-depth-1">
+					<div class="row valign-wrapper">
+						<div class="col s4">
+							<img alt="maco" src="http://res.cloudinary.com/dfocrv7tg/image/upload/v1471321959/oaxaca/maco.jpg" class="responsive-img" /> <!-- notice the "circle" class -->
 							</div>
-							<div class="col s8">
-								<span class="black-text justy">
-									<h5>Jardin Etnobotánico</h5>
-									<p>
-										Recorridos guiados en español para todo público tres veces al día.Ex-Convento de Santo Domingo. Reforma S/N esquina con Constitución
-									</p>
-									<p>
-										Horario: de lunes a sábado 10:00, 12:00 y 17:00 horas,en inglés los martes, jueves y sábados a las 11:00 horas
-									</p>
-								</span>
-							</div>
-						</div>
-					</div>
-					<!--Panel4-->
-					<!--Panel5-->
-					<div class="card-panel grey lighten-5 z-depth-1">
-						<div class="row valign-wrapper">
-							<div class="col s4">
-								<img src="img/andador.jpg" alt="" class="responsive-img"> <!-- notice the "circle" class -->
-							</div>
-							<div class="col s8">
-								<span class="black-text justy">
+							<div class="col s8 black-text justy">
 									<h5>MUSEO DE ARTE CONTEMPORÁNEO DE OAXACA (MACO)</h5>
 									<p>
-										Macedonio Alcalá  202, Centro Histórico. 
+										Alojado en una hermosa casona colonial, en ella encontrarás creaciones artísticas antiguas y modernas tales como pinturas, escultura gráfica y fotografía. Cuenta con 16 salas de exhibición y tienda.
+									</p>
+									<p>
+										Macedonio Alcalá 202, Centro Histórico.
 									</p>
 									<p> 
 										Horario: 10:30 a 20:00 hrs. (cerrado los martes) 
 									</p>
-									<p>Tels. (951) 514-1055,  514-2228</p>
-								</span>
+									<p>
+										Entrada $20 pesos y $10 con credencial de maestro, estudiante o mayor.
+									</p>
+									<p>Tels. 01 (951) 514-1055 y 514-2228</p>
 							</div>
 						</div>
 					</div>
@@ -202,20 +260,21 @@
 					<div class="card-panel grey lighten-5 z-depth-1">
 						<div class="row valign-wrapper">
 							<div class="col s4">
-								<img src="img/tule.jpg" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+								<img alt="textil" src="http://res.cloudinary.com/dfocrv7tg/image/upload/v1471445190/oaxaca/mtextil.jpg"  class="responsive-img" /> <!-- notice the "circle" class -->
 							</div>
-							<div class="col s8">
-								<span class="black-text justy">
+							<div class="col s8 black-text justy">
 									<h5>MUSEO TEXTIL DE OAXACA</h5>
 									<p>
-										Procesos creativos para la elaboración de textiles de Oaxaca. Hidalgo 917, Centro Histórico.
+										Procesos creativos para la elaboración de textiles de Oaxaca. 
+									</p>
+									<p>
+										Hidalgo 917, Centro Histórico.
 									</p>
 									<p>	Horario: Lunes a sábado de 10:00 a 20:00 hrs. Domingo de 10:00 a 18:00 hrs Visitas guiadas: ( Español e Inglés ): Miércoles de 17:00 a 18:00 hrs.
 									</p>
 									<p>
-										Tel. (951) 501 11 04 y 501 1617
+										Tel. 01 (951) 501 11 04 y 501 1617
 									</p>
-								</span>
 							</div>
 						</div>
 					</div>
@@ -224,19 +283,21 @@
 					<div class="card-panel grey lighten-5 z-depth-1">
 						<div class="row valign-wrapper">
 							<div class="col s4">
-								<img src="img/andador.jpg" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+								<img alt="juarez" src="http://res.cloudinary.com/dfocrv7tg/image/upload/v1471446447/oaxaca/cjuarez.jpg" class="responsive-img" /> <!-- notice the "circle" class -->
 							</div>
-							<div class="col s8">
-								<span class="black-text justy">
-									<h5>Casa Juarez</h5>
+							<div class="col s8 black-text justy">
+									<h5>MUSEO CASA JUÁREZ</h5>
 									<p>
-										Manuel García Vigil (García Vigil) 609. Centro Histórico.‎  
+										Construcción característica de la casa oaxaqueña del siglo XVIII, dio albergue a Don Benito Juárez y ahí se encuentran reunidos todos los objetos que pertenecieron a él.
+										  
+									</p>
+									<p>
+										Manuel García Vigil 609, Centro Histórico.‎
 									</p>
 									<p> 
-										Horario:  Martes a domingo: 10:00 a 19:00 Hrs.
+										Horario de visitas: De martes a domingo de 10:00 a 19:00 Hrs.
 									</p>
-									<p>Tel (951) 516 1860 </p>
-								</span>
+									<p>Tel. 01 (951) 516 1860 </p>
 							</div>
 						</div>
 					</div>
@@ -247,13 +308,17 @@
 			</div>	
 		</div>
 
-
+		<div class="hid">
 		<div class="parallax-container">
-			<div class="parallax"><img src="img/oaxaca/gallery.jpg"></div>
+			<div class="parallax">
+				<img alt="galeria" src="http://res.cloudinary.com/dfocrv7tg/image/upload/v1471321959/oaxaca/gallery.jpg" />
+			</div>
 			<div class="caption center">
 				<h3 class="white-text">GALERIAS</h3>
 			</div>
 		</div>
+		</div>
+
 		<div>
 			<div class="container">
 				<div class="col s12 m8 offset-m2 l6 offset-l3">
@@ -261,18 +326,17 @@
 					<div class="card-panel grey lighten-5 z-depth-1">
 						<div class="row valign-wrapper">
 							<div class="col s4">
-								<img src="img/andador.jpg" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+								<img alt="omar" src="http://res.cloudinary.com/dfocrv7tg/image/upload/v1471321959/oaxaca/omar.jpg" class="responsive-img" /> <!-- notice the "circle" class -->
 							</div>
-							<div class="col s8">
-								<span class="black-text justy">
-									<h5>Omar Hernandez</h5>
+							<div class="col s8 black-text justy">
+									<h5>OMAR HERNÁNDEZ</h5>
 									<p>
-										texto 
+										Cerámica contemporánea.
+										
 									</p>
-									<p> 
-										Horario
+									<p>
+										Alcalá 303, Centro Histórico. 
 									</p>
-								</span>
 							</div>
 						</div>
 					</div>
@@ -280,18 +344,16 @@
 					<div class="card-panel grey lighten-5 z-depth-1">
 						<div class="row valign-wrapper">
 							<div class="col s4">
-								<img src="img/andador.jpg" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+								<img alt="quetzalli" src="http://res.cloudinary.com/dfocrv7tg/image/upload/v1471321959/oaxaca/quetzalii.jpg"  class="responsive-img" /> <!-- notice the "circle" class -->
 							</div>
-							<div class="col s8">
-								<span class="black-text justy">
-									<h5>Quetzalli</h5>
+							<div class="col s8 black-text justy">
+									<h5>QUETZALLI</h5>
 									<p>
 										Constitución 104-1, Centro Histórico. 
 									</p>
 									<p> 
-										Tel. (951) 514-2606
+										Tel. 01 (951) 514-2606
 									</p>
-								</span>
 							</div>
 						</div>
 					</div>
@@ -299,66 +361,103 @@
 					<div class="card-panel grey lighten-5 z-depth-1">
 						<div class="row valign-wrapper">
 							<div class="col s4">
-								<img src="img/andador.jpg" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+								<img alt="voces" src="http://res.cloudinary.com/dfocrv7tg/image/upload/v1472953798/oaxaca/voces.jpg" class="responsive-img" /> <!-- notice the "circle" class -->
 							</div>
-							<div class="col s8">
-								<span class="black-text justy">
-									<h5>Juanacata</h5>
+							<div class="col s8 black-text justy">
+									<h5>VOCES DE COPAL</h5>
 									<p>
-										texto 
+										Calle Macedonio Alcalá 303, Centro Histórico. 
 									</p>
 									<p> 
-										Horario
+										Tel. 01 (951) 516 8341
 									</p>
-								</span>
 							</div>
 						</div>
 					</div>
+					
 				</div>
 			</div>	
 		</div>
 
+		<div class="hid">
 		<div class="parallax-container">
-			<div class="parallax"><img src="img/road.jpg"></div>
+			<div class="parallax">
+				<img alt="camino" src="http://res.cloudinary.com/dfocrv7tg/image/upload/v1471321959/oaxaca/road.jpg" />
+			</div>
 			<div class="caption center">
 				<h3 class="white-text">CERCANIAS</h3>
 			</div>
 		</div>
-
+		</div>
 
 		<!---->
 		<div class="container">
 			<div class="col s12 m8 offset-m2 l6 offset-l3">
 				<div class="card-panel grey lighten-5 z-depth-1">
 					<div class="row valign-wrapper">
-						<div class="col s8">
-							<span class="black-text justy">
-								<h5>MONTE ALBAN</h5>
+						<div class="col s8 black-text justy">
+								<h5>MONTE ALBÁN</h5>
 								<p>
 									Este sitio arqueológico ubicado a 10 km de Oaxaca fue la antigua ciudad de los zapotecas, y uno de los primeros y más pobladas ciudades mesoamericanas. Si deseas visitar un lugar en Oaxaca debería ser éste!
 								</p>
 								<p> 
-									Abierto: 9:00 hrs a 17:00 hrs
+									Horario: De 9:00 hrs a 17:00 hrs
 								</p>
-							</span>
 						</div>
 						<div class="col s4">
-							<img src="img/monte.jpg" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+							<img alt="monte" src="http://res.cloudinary.com/dfocrv7tg/image/upload/v1471321959/oaxaca/monte.jpg" class="responsive-img" /> <!-- notice the "circle" class -->
 						</div>
 					</div>
 				</div>
 				<div class="card-panel grey lighten-5 z-depth-1">
 					<div class="row valign-wrapper">
-						<div class="col s8">
-							<span class="black-text justy">
-								<h5>ARBOL DEL TULE</h5>
+						<div class="col s8 black-text justy">
+								<h5>ÁRBOL DEL TULE</h5>
 								<p>
-									Arbol con el diámetro de tronco más grande del mundo. Es un ahuehuete (Taxodium mucronatum) con una circunferencia de aproximadamente 58 metros y una altura de 42 metros. Con un diámetro de 14.05 metros, se estima que serían necesarias al menos 30 personas con las manos entrelazadas para poder abarcar su tronco y en su sombra caben aproximadamente 500 personas los lugareños le han encontrado diferente formas al tronco como son de duende, cocodrilo, delfín, cabeza de venado, entre otras
+									Árbol con el diámetro de tronco más grande del mundo. Es un ahuehuete (Taxodium mucronatum) con una circunferencia de aproximadamente 58 metros y una altura de 42 metros. Con un diámetro de 14.05 metros, se estima que serían necesarias al menos 30 personas con las manos entrelazadas para poder abarcar su tronco y en su sombra caben aproximadamente 500 personas los lugareños le han encontrado diferente formas al tronco como son de duende, cocodrilo, delfín, cabeza de venado, entre otras
 								</p>
-							</span>
 						</div>
 						<div class="col s4">
-							<img src="img/tule.jpg" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+							<img alt="tule" src="http://res.cloudinary.com/dfocrv7tg/image/upload/v1471321959/oaxaca/tule.jpg" class="responsive-img" /> <!-- notice the "circle" class -->
+						</div>
+					</div>
+				</div>
+				<div class="card-panel grey lighten-5 z-depth-1">
+					<div class="row valign-wrapper">
+						<div class="col s8 black-text justy">
+								<h5>HIERVE EL AGUA</h5>
+								<p>Hierve el Agua es un sistema de cascadas petrificadas, formadas por carbonato de calcio. Las cascadas son de origen natural y se formaron hace miles de años, por el escurrimiento de agua con alto contenido de minerales. El lugar se ubica a unos 70 km de la ciudad de Oaxaca.
+								</p>
+						</div>
+						<div class="col s4">
+							<img alt="hierve" src="http://res.cloudinary.com/dfocrv7tg/image/upload/v1471734171/oaxaca/hierve.jpg" class="responsive-img" /> <!-- notice the "circle" class -->
+						</div>
+					</div>
+				</div>
+				<div class="card-panel grey lighten-5 z-depth-1">
+					<div class="row valign-wrapper">
+						<div class="col s8 black-text justy">
+								<h5>MITLA</h5>
+								<p>
+									Principal centro ceremonial después de Monte Albán, la palabra Mitla o Mictlán es de origen náhuatl y significa "Lugar de los Muertos" o "Inframundo" en zapoteco se llama "Lyobaa" que significa "Lugar de entierros", el cual ya en mexica quedó en Mitlan, "lugar de muertos" y ya españolizado sólo Mitla.
+								</p>
+						</div>
+						<div class="col s4">
+							<img alt="mitla" src="http://res.cloudinary.com/dfocrv7tg/image/upload/v1471321959/oaxaca/mitla.jpg"  class="responsive-img" /> <!-- notice the "circle" class -->
+						</div>
+					</div>
+				</div>
+				<div class="card-panel grey lighten-5 z-depth-1">
+					<div class="row valign-wrapper">
+						<div class="col s8 black-text justy">
+								<h5>RUTA DEL MEZCAL</h5>
+								<p>
+									De las 210 variedades de maguey que existen en todo el mundo, tan sólo en Oaxaca se encuentran 120, lo cual la convierte en una tierra no sólo rica, sino rebosante de sutilezas.
+									Existen diferentes tipos: jóven, con gusano, reposado o añejo; y de agaves silvestres como el arroqueño, el madrecuixe, el tepextate o el tobalá, por mencionar sólo algunos
+								</p>
+						</div>
+						<div class="col s4">
+							<img alt="magey" src="http://res.cloudinary.com/dfocrv7tg/image/upload/v1471321959/oaxaca/magey.jpg" class="responsive-img" /> <!-- notice the "circle" class -->
 						</div>
 					</div>
 				</div>
@@ -366,11 +465,12 @@
 					<div class="row valign-wrapper">
 						<div class="col s12 m12 ">
 						<div class="justy">
-							<h2 class="center">Turismo del convento</h2>
-							<p class="center">Turismo el Convento de Oaxaca es una agencia de viajes, la cuál ofrece diferentes tours, servicios y transporte, tienen oficinas en  Hoteles Camino Real, Victoria, Misión de los Angeles y Holiday Inn Express. Sus servicios están disponibles en un variedad de idiomas como Español, Inglés, Italiano, francés y Alemán.</p>
+							<h2 class="center">TURISMO EL CONVENTO</h2>
+							<p class="center">Turismo el Convento de Oaxaca es una agencia de viajes, la cuál ofrece diferentes tours, servicios y transporte. Sus servicios están disponibles en un variedad de idiomas como Español, Inglés, Italiano, Francés y Alemán.</p>
 							<p class="center">Web: <a href="https://oaxacatours.mx/#">oaxacatours.mx</a></p>
-							<p class="center">Dirección: 5 de Mayo 300 Centro 68000 Oaxaca, Oax </p>
-							<p class="center">Tel. (951) 51 65 791 o 51 61 806</p>
+							<p class="center">Dirección: 5 de Mayo 300, Centro Histórico. </p>
+							<p class="center">En el interior del Hotel Quinta Real</p>
+							<p class="center">Tel. 01 (951) 51 65 791 o 51 61 806</p>
 						</div>
 						</div>
 					</div>
@@ -379,12 +479,15 @@
 		</div>
 
 
-
+		<div class="hid">
 		<div class="parallax-container">
-			<div class="parallax"><img src="img/food.jpg"></div>
-			<div class="caption center">
-				<h3 class="white-text">FOOD & DRINKS</h3>
+			<div class="parallax">
+				<img alt="combinado" src="http://res.cloudinary.com/dfocrv7tg/image/upload/v1473095590/oaxaca/prueba2.jpg" />
 			</div>
+			<div class="caption center">
+				<h3 class="white-text">COMIDAS & BEBIDAS</h3>
+			</div>
+		</div>
 		</div>
 
 		<!---->
@@ -392,8 +495,8 @@
 			<div class="row">
 				<div class="col s12">
 					<ul class="tabs">
-						<li class="tab col s3"><a class="active" href="#test1">RESTAURANTES</a></li>
-						<li class="tab col s3"><a href="#test2">BARES</a></li>
+						<li class="tab col s3"><a class="active grey-text text-darken-1" href="#test1">RESTAURANTES</a></li>
+						<li class="tab col s3"><a href="#test2" class="grey-text text-darken-1">BARES</a></li>
 					</ul>
 				</div>
 				<div id="test1" class="col s12">
@@ -401,25 +504,50 @@
 						<div class="col s12 m12">
 							<div class="col s12 m3">
 								<div class="card-panel z-depth-4 center">
+									<div class="grey-text text-darken-1">
+										<p><i class="material-icons">star</i></p>
+										Favorito de la novia
+									</div>
 									<div>
-										<img class="circle" src="img/catedral5.jpg" width="140px">
+										<img alt="casa" src="http://res.cloudinary.com/dfocrv7tg/image/upload/v1471321959/oaxaca/casao1.jpg" class="responsive-img circle tercio" />
 									</div>
 									<div class="green-text">
 										<i class="material-icons">attach_money</i>
 										<i class="material-icons">attach_money</i>
 										<i class="material-icons">attach_money</i>
 									</div>
-									<p>Catedral</p>
-									<a href="http://restaurantecatedral.com.mx/">www.restaurantcatedral.com</a>
+									<p>Casa Oaxaca</p>
+									<a href="http://www.casaoaxacaelrestaurante.com/">www.casaoaxaca.com</a>
 								</div>
 							</div>
 							<div class="col s12 m3">
 								<div class="card-panel z-depth-4 center">
-									<div >
-										<img class="circle" src="img/oaxaca/pacos.jpg" width="140px">
+									<div class="grey-text text-darken-1">
+										<p><i class="material-icons">star</i></p>
+										Favorito de la novia
+									</div>
+									<div>
+										<img alt="pitiona" src="http://res.cloudinary.com/dfocrv7tg/image/upload/v1471321959/oaxaca/pitiona.jpg" class="responsive-img circle tercio" />
 									</div>
 									<div class="green-text">
 										<i class="material-icons">attach_money</i>
+										<i class="material-icons">attach_money</i>
+										<i class="material-icons">attach_money</i>
+									</div>
+									<p>Pitiona</p>
+									<a href="http://www.pitiona.com/">www.pitiona.com</a>
+								</div>
+							</div>
+							<div class="col s12 m3">
+								<div class="card-panel z-depth-4 center">
+									<div class="grey-text text-darken-1">
+									    <p><i class="material-icons">star</i></p>
+										Favorito del novio
+									</div>
+									<div>
+										<img alt="pacos" src="http://res.cloudinary.com/dfocrv7tg/image/upload/v1471321959/oaxaca/pacos.jpg" class="responsive-img circle tercio" />
+									</div>
+									<div class="green-text">
 										<i class="material-icons">attach_money</i>
 										<i class="material-icons">attach_money</i>
 									</div>
@@ -428,31 +556,20 @@
 								</div>
 							</div>
 							<div class="col s12 m3">
-								<div class="card-panel z-depth-4 center">
-									<div>
-										<img class="circle" src="img/oaxaca/pitiona.jpg" width="140px">
-									</div>
-									<div class="green-text">
-										<i class="material-icons">attach_money</i>
-										<i class="material-icons">attach_money</i>
-										<i class="material-icons">attach_money</i>
-									</div>
-									<p >Pitiona</p>
-									<a href="http://www.pitiona.com/">www.pitiona.com</a>
-								</div>
-							</div>
-							<div class="col s12 m3">
 								<div class="card-panel center">
+									<div class="grey-text text-darken-1">
+									<p><i class="material-icons">star</i></p>
+										Favorito del novio
+									</div>
 									<div>
-										<img class="circle" src="img/oaxaca/biznaga.jpg" width="140px">
+										<img alt="zandunga" src="http://res.cloudinary.com/dfocrv7tg/image/upload/v1471321959/oaxaca/zandunga.jpg"  class="responsive-img circle tercio"/>
 									</div>
 									<div class="green-text">
 										<i class="material-icons">attach_money</i>
 										<i class="material-icons">attach_money</i>
-										<i class="material-icons">attach_money</i>
 									</div>
-									<p>Biznaga</p>
-									<a href="https://www.zonaturistica.com/restaurante/2243/la-biznaga-oaxaca.html">www.zonaturistica.com</a>
+									<p>Zandunga</p>
+									<a href="http://oaxaca.pruebalo.com.mx/restaurantes/zandunga">oaxaca.pruebalo.com</a>
 								</div>
 							</div>
 						</div>
@@ -462,10 +579,9 @@
 							<div class="col s12 m3">
 								<div class="card-panel center">
 									<div >
-										<img class="circle" src="img/oaxaca/teca.jpg" width="140px">
+										<img alt="teca" src="http://res.cloudinary.com/dfocrv7tg/image/upload/v1471321959/oaxaca/teca.jpg"  class="responsive-img circle tercio"/>
 									</div>
 									<div class="green-text">
-										<i class="material-icons">attach_money</i>
 										<i class="material-icons">attach_money</i>
 										<i class="material-icons">attach_money</i>
 									</div>
@@ -475,22 +591,21 @@
 							</div>
 							<div class="col s12 m3">
 								<div class="card-panel center">
-									<div >
-										<img class="circle" src="img/oaxaca/zandunga.jpg" width="140px">
+									<div>
+										<img alt="biznaga" src="http://res.cloudinary.com/dfocrv7tg/image/upload/v1471321959/oaxaca/biznaga.jpg" class="responsive-img circle tercio" />
 									</div>
 									<div class="green-text">
 										<i class="material-icons">attach_money</i>
 										<i class="material-icons">attach_money</i>
-										<i class="material-icons">attach_money</i>
 									</div>
-									<p>Zandunga</p>
-									<a href="http://oaxaca.pruebalo.com.mx/restaurantes/zandunga">oaxaca.pruebalo.com.</a>
+									<p>Biznaga</p>
+									<a href="https://www.zonaturistica.com/restaurante/2243/la-biznaga-oaxaca.html">www.zonaturistica.com</a>
 								</div>
 							</div>
 							<div class="col s12 m3">
 								<div class="card-panel center">
 									<div>
-										<img class="circle" src="img/oaxaca/origen.jpg" width="140px">
+										<img alt="origen"  src="http://res.cloudinary.com/dfocrv7tg/image/upload/c_scale,h_800,w_800/v1471476776/oaxaca/elorigen.jpg" class="responsive-img circle tercio" />
 									</div>
 									<div class="green-text">
 										<i class="material-icons">attach_money</i>
@@ -502,17 +617,17 @@
 								</div>
 							</div>
 							<div class="col s12 m3">
-								<div class="card-panel center">
-									<div >
-										<img class="circle" src="img/oaxaca/casa2.jpg" width="140px">
+								<div class="card-panel z-depth-4 center">
+									<div>
+										<img alt="catedral" src="http://res.cloudinary.com/dfocrv7tg/image/upload/v1471321959/oaxaca/catedral5.jpg" class="responsive-img circle tercio"/>
 									</div>
 									<div class="green-text">
 										<i class="material-icons">attach_money</i>
 										<i class="material-icons">attach_money</i>
 										<i class="material-icons">attach_money</i>
 									</div>
-									<p >Casa Oaxaca el café</p>
-									<p><a href="http://www.casaoaxacacafe.com/php/spa/index.php#desayuno">www.casaoaxacacafe.com</a></p>
+									<p>Catedral</p>
+									<a href="http://restaurantecatedral.com.mx/">www.restaurantcatedral.com</a>
 								</div>
 							</div>
 						</div>
@@ -523,8 +638,16 @@
 						<div class="col s12 m12">
 							<div class="col s12 m3">
 								<div class="card-panel z-depth-4 center">
+									<div class="grey-text text-darken-1">
+										<p><i class="material-icons">star</i></p>Favorito de la novia
+									</div>
 									<div>
-										<img class="circle" src="img/oaxaca/danzantes.jpg" width="140px">
+										<img alt="danzantes" src="http://res.cloudinary.com/dfocrv7tg/image/upload/v1471321959/oaxaca/danzantes.jpg" class="responsive-img circle tercio"/>
+									</div>
+									<div class="green-text">
+										<i class="material-icons">attach_money</i>
+										<i class="material-icons">attach_money</i>
+										<i class="material-icons">attach_money</i>
 									</div>
 									<p>Los Danzantes</p>
 									<a href="http://www.losdanzantes.com/new-page-1/">www.losdanzantes.com</a>
@@ -532,26 +655,48 @@
 							</div>
 							<div class="col s12 m3">
 								<div class="card-panel z-depth-4 center">
-									<div >
-										<img class="circle" src="img/oaxaca/amantes.jpg" width="140px">
+									<div class="grey-text text-darken-1">
+										<p><i class="material-icons">star</i></p> Favorito de la novia
 									</div>
-									<p >Los Amantes</p>
-									<a href="http://www.losamantes.com/">www.losamantes.com</a>
+									<div>
+										<img alt="expendio" src="http://res.cloudinary.com/dfocrv7tg/image/upload/v1471901682/oaxaca/expendio.jpg"  class="responsive-img circle tercio" />
+									</div>
+									<div class="green-text">
+										<i class="material-icons">attach_money</i>
+										<i class="material-icons">attach_money</i>
+									</div>
+									<p>Expendio tradición</p>
+									<a href="http://expendiotradicion.com/">www.expendiotradicion.com</a>
 								</div>
 							</div>
 							<div class="col s12 m3">
 								<div class="card-panel z-depth-4 center">
-									<div>
-										<img class="circle" src="img/oaxaca/mezcaloteca.jpg" width="140px">
+									<div class="grey-text text-darken-1">
+										<p><i class="material-icons">star</i></p> Favorito del novio
 									</div>
-									<p >Mezcaloteca</p>
-									<a href="http://www.mezcaloteca.com/">www.mezcaloteca.com</a>
+									<div>
+										<img alt="casa" src="http://res.cloudinary.com/dfocrv7tg/image/upload/v1471901682/oaxaca/casacrespo.jpg" class="responsive-img circle tercio" />
+									</div>
+									<div class="green-text">
+										<i class="material-icons">attach_money</i>
+										<i class="material-icons">attach_money</i>
+										<i class="material-icons">attach_money</i>
+									</div>
+									<p>Casa crespo</p>
+									<a href="http://casacrespo.com/es//">www.casacrespo.com</a>
 								</div>
 							</div>
 							<div class="col s12 m3">
 								<div class="card-panel center">
+									<div class="grey-text text-darken-1">
+										<p><i class="material-icons">star</i></p> Favorito del novio
+									</div>
 									<div>
-										<img class="circle" src="img/oaxaca/mezquite.jpg" width="140px">
+										<img alt="mezquite" src="http://res.cloudinary.com/dfocrv7tg/image/upload/v1471321959/oaxaca/mezquite.jpg" class="responsive-img circle tercio"/>
+									</div>
+									<div class="green-text">
+										<i class="material-icons">attach_money</i>
+										<i class="material-icons">attach_money</i>
 									</div>
 									<p>Mezquite</p>
 									<a href="https://www.atrapalo.com.mx/restaurantes/mezquite-gastronomia-y-destilados_f47000.html">www.atrapalo.com</a>
@@ -564,19 +709,125 @@
 
 		</div>
 
+		<div class="hid">
 		<div class="parallax-container">
-			<div class="parallax"><img src="img/taxis.jpg"></div>
+			<div class="parallax">
+				<img alt="barro" src="http://res.cloudinary.com/dfocrv7tg/image/upload/c_scale,w_1800/v1471401034/oaxaca/barron.jpg"/>
+			</div>
 			<div class="caption center">
-				<h3 class="white-text">INFORMACIÓN UTIL</h3>
+				<h3 class="white-text">ARTESANIAS</h3>
 			</div>
 		</div>
-		<div class="container">
+		</div>
 
+		<div class="container">
+					<div class="card-panel grey lighten-5 z-depth-1">
+						<div class="row valign-wrapper">
+							<div class="col s4">
+								<img alt="baules" src="http://res.cloudinary.com/dfocrv7tg/image/upload/v1471321959/oaxaca/baules.jpg" class="responsive-img" /> <!-- notice the "circle" class -->
+							</div>
+							<div class="col s8 black-text justy">
+									<h5>BAÚLES DE JUANA CATA</h5>
+									<p>
+										Y tal como si salieran del baúl de los recuerdos, en este lugar encontrarás huipiles, camisas, blusas, faldas y sombreros tejidos con técnicas ancestrales. La calidad de estos textiles es muy alta, siendo una parada obligada para quien esté en busca de estas obras de arte. Encontrarás una gran variedad de diseños y colores, adaptándose a todos los gustos. Así que no dejes de visitar esta tienda aunque sea para admirar estos hermosos textiles.
+									</p>
+							</div>
+						</div>
+					</div>
+					<div class="card-panel grey lighten-5 z-depth-1">
+						<div class="row valign-wrapper">
+							<div class="col s4">
+								<img alt="aripo" src="http://res.cloudinary.com/dfocrv7tg/image/upload/v1471321959/oaxaca/aripo.jpg"  class="responsive-img" /> <!-- notice the "circle" class -->
+							</div>
+							<div class="col s8 black-text justy">
+									<h5>INSTITUTO OAXAQUEÑO DE LAS ARTESANÍAS (ARIPO)</h5>
+									<p>
+										La tienda de ARIPO, pertenece al Instituto Oaxaqueño  de las Artesanías, es un edificio en altos, el lugar me parece perfecto, es una casa grande con cuartos y un jardín enmedio.
+									</p>
+							</div>
+						</div>
+					</div>
+					<div class="card-panel grey lighten-5 z-depth-1">
+						<div class="row valign-wrapper">
+							<div class="col s4">
+								<img alt="mercado" src="http://res.cloudinary.com/dfocrv7tg/image/upload/v1471321959/oaxaca/mercadoart.jpg"  class="responsive-img" /> <!-- notice the "circle" class -->
+							</div>
+							<div class="col s8 black-text justy">
+									<h5>MERCADO DE ARTESANIAS</h5>
+									<p>
+										El Mercado de Artesanías en Oaxaca está lleno de todas las artesanías maravillosas que los pueblos de Oaxaca tienen que ofrecer. El mercado artesanal de colores está a sólo 5 cuadras del Zócalo, en el centro de Oaxaca y ofrece demostraciones en vivo de cómo se producen algunas de las Artesanías. Este pequeño mercado bien merece una visita.
+									</p>
+							</div>
+						</div>
+					</div>
+		</div>
+
+		<!--salones de belleza-->
+		<div class="hid">
+		<div class="parallax-container">
+			<div class="parallax">
+				<img alt="salon" src="http://res.cloudinary.com/dfocrv7tg/image/upload/v1473092545/oaxaca/Ivanna.jpg" />
+			</div>
+			<div class="caption center">
+				<h3 class="white-text">SALONES DE BELLEZA</h3>
+			</div>
+		</div>
+		</div>
+		
+		<div class="container">
+					<div class="card-panel grey lighten-5 z-depth-1">
+						<div class="row valign-wrapper">
+							<div class="col s4">
+								<img alt="ivanna" src="http://res.cloudinary.com/dfocrv7tg/image/upload/v1471747906/oaxaca/iavanna.jpg" class="responsive-img" /> <!-- notice the "circle" class -->
+							</div>
+							<div class="col s8 black-text justy">
+									<h5> IVANNA MAKE UP AND HAIR BOUTIQUE</h5>
+									<p>
+										Escuela Naval Militar #112 int 2 col. Reforma
+										68050 Oaxaca de Juárez
+									</p>
+									<p>
+										Tel. (951) 504-9428
+									</p>
+							</div>
+						</div>
+					</div>
+					<div class="card-panel grey lighten-5 z-depth-1">
+						<div class="row valign-wrapper">
+							<div class="col s4">
+								<img alt="londres" src="http://res.cloudinary.com/dfocrv7tg/image/upload/v1471653001/oaxaca/londres.jpg"  class="responsive-img" /> <!-- notice the "circle" class -->
+							</div>
+							<div class="col s8 black-text justy">
+									<h5>SALON DE BELLEZA LONDRES</h5>
+									<p>
+										Ubicado a dos cuadras del Camino Real: 
+										Murguía 108, Centro
+									</p>
+									<p>
+										Tel. (951) 516-0656
+									</p>
+							</div>
+						</div>
+					</div>
+		</div>
+
+		<div class="hid">
+		<div class="parallax-container">
+			<div class="parallax">
+				<img alt="taxy" src="http://res.cloudinary.com/dfocrv7tg/image/upload/c_scale,w_1800/v1471401034/oaxaca/taxyy.jpg" />
+			</div>
+			<div class="caption center">
+				<h3 class="white-text">INFORMACIÓN ÚTIL</h3>
+			</div>
+		</div>
+		</div>
+		
+		<div class="container">
 			<table class="highlight">
 				<thead>
 					<tr>
-						<th data-field="id">Servicio</th>
-						<th data-field="name">Telefono</th>
+						<th data-field="id" class="mitad">Servicios públicos</th>
+						<th data-field="name" class="mitad">Teléfono</th>
 					</tr>
 				</thead>
 
@@ -605,23 +856,85 @@
 			</table>
 		</div>
 
-		<!--footer-->
-		<footer class="page-footer">
-			<div class="footer-copyright">
-				<div class="container">
-					© 2017 Copyright
-					<a class="grey-text text-lighten-4 right" href="#!">Miguel Altamirano</a>
-				</div>
-			</div>
-		</footer>
+		<div class="container">
+			<table class="highlight">
+				<thead>
+					<tr>
+						<th data-field="id" class="mitad">Servicio de taxis</th>
+						<th data-field="name" class="mitad">Teléfonos</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td>Transporte aeropuerto</td>
+						<td>Tels. (951) 514-4350,  511-5453</td>
+					</tr>
+					<tr>
+						<td>Sitio Aldama</td>
+						<td>Tels. (951) 515-1003,  516-1572</td>
+					</tr>
+					<tr>
+						<td>Sitio 5 de Febrero</td>
+						<td>Tels. (951) 516-6575,  513-7496</td>
+					</tr>
+					<tr>
+						<td>Sitio Antequera</td>
+						<td>Tel.  (951) 516-3611, 503 8434</td>
+					</tr>
+					<tr>
+						<td>Sitio ADO</td>
+						<td>Tels.  (951) 515-1503, 516-1572</td>
+					</tr>
+					<tr>
+						<td>Sitio Alameda</td>
+						<td>Tels.  (951) 516-2685, 516-2190</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+    	<div class="center">
+      		<a href="">
+      			<img alt="palacio" src="http://res.cloudinary.com/dfocrv7tg/image/upload/c_scale,w_591/v1472595753/travel/pal.jpg" class="responsive-img" />
+      		</a>
+		    <p>
+          SI DESEAS HACERNOS UN OBSEQUIO PONEMOS A TU DISPOSICIÓN NUESTRAS OPCIONES PARA MESA DE REGALOS:
+        </p>
+        <span class="btn tooltipped  amber " data-position="bottom" data-delay="50" data-tooltip="NUMERO DE EVENTO: 309129"> 
+            <a href="http://www.elpalaciodehierro.com/celebra/view/index/id/309129/#results" class="black-text">www.elpalaciodehierro.com</a>
+        </span>
+        <p>
+          O EN EFECTIVO EL DÍA DEL EVENTO
+          !GRACIAS¡
+        </p>
+      	</div>
+      <div class="right">
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">x</a>
+      </div>
+    </div>
+  </div>
+
+  <!--footer-->
+  <footer class="page-footer grey lighten-4">
+    <div class="footer-copyright grey lighten-4">
+      <div class="container grey lighten-4">
+      © 2017 Copyright
+      <a class="grey-text text-lighten-4 right" href="#!">Miguel Altamirano</a>
+      </div>
+    </div>
+  </footer>
 
 		<div class="fixed-action-btn" style="bottom: 5px; left: 50%;">
-			<a class="btn-floating btn-large black">
-				<i class="large material-icons">arrow_upward</i>
+			<a class="btn-floating btn-large white">
+				<i class="large material-icons black-text">arrow_upward</i>
 			</a>
 		</div>
 
-
+</div>
 
 		<!--Import jQuery before materialize.js-->
 		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -630,9 +943,7 @@
 			$( document ).ready(function(){
 				$(".button-collapse").sideNav();
 				$('.modal-trigger').leanModal();
-				$('.slider').slider({full_width: true, height:800});
 				$('.parallax').parallax();
-
 				$('.fixed-action-btn').click(function(){
 					$('body, html').animate({
 						scrollTop: '0px'
